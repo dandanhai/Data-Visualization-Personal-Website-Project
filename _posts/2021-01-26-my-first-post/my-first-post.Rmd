@@ -4,9 +4,13 @@ description: |
   Below is my first DataViz Makeovers assignment. First bar chart is my main chart. Besides, Pyramid and Line chart are for detail comparison.
 author:
   - name: Dan Hai
-    url: https://example.com/norajones
+    url: https://www.singstat.gov.sg/
 date: 01-26-2021
 output:
+  html_document:
+    theme: united
+    toc: yes   #table of content
+    toc_float: yes
   distill::distill_article:
     self_contained: false
 ---
@@ -17,32 +21,44 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 # a.	Critique of Data Visualization
-### Clarity
+### **Clarity**
 - The purpose of this chart is to compare the change of the percentage of Labour in 2009 with that in 2019. However, the title is misleading or incomplete. The title only mentions the age but does not mention the year.
+
 - The lack of Y-axis as a reference for data makes it impossible for us to observe specific differences. There is also lack of the tick mark, which tells us the value of each point so that we can make comparisons. The only thing we can tell from the chart is that the age group of the workforce in 2009 was younger than 55 than in 2019, but by how much?
+
 - It is not accurate enough. If the title indicates that the whole calculation process is a percentage, then the table at the bottom should also indicate that it is a percentage. However, the figure only shows the data and does not explain the number format
+
 - It is a mistake to use the chart. According to the above meaning and the meaning expressed in the picture, we want to compare the differences of each age group between 2009 and 2019. However, the problem is that line chart and line chart are suitable for comparing trends, such as the rise and fall of stocks. I believe that line chart is not the most suitable chart in this visual analysis.
 
-### Aesthetic
+### **Aesthetic**
 - The combination of colours is not eye-catching
+
 - Legend is missing. Normally, which year represents what colour should be displayed in the upper right corner to help readers distinguish more easily
+
 - The table at the bottom affects aesthetics. Readers need to spend more time extracting the data of each age group. At the same time, there are too many words in the icon, which makes it very cumbersome
+
 - While the text is too cumbersome, the two lines are too simple. The details of the lines should be changed
 
 # b.	Way to Improve Current Design
-### Critique from Clarity
+### **Critique from Clarity**
 - Title needs to be precise. It can be changed as “Resident labor force change between Year 2009 and Year 2019 by age”
+
 - Add Y-axis as a reference on the chart and the calculation format should be percentage 
+
 - Add value label on each point to clearly show the different between Year 2009 and Year 2019
+
 - After careful consideration and attempt, I suggest using bar chart to compare the differences between each age group in 2009 and 2019. The advantage of bar chart is that it can effectively display the differences and values
 
-### Critique from aesthetic
+### **Critique from Aesthetic**
 - Using color such as blues and oranges can add simplicity and aesthetics to a chart
+
 - Add legend on the right top corner to identify the color and category
+
 - Create a new dashboard, which first summarizes the differences between 2009 and 2019, at the same time, create the labor differences between men and women, and then refine the data to a single age period such as age 15-19 from 2009 to 2019 based on data.
+
 - Avoid adding too much text to simplify the graph. Mention the main point is good enough.
 
-### Sketch of Proposed Design 
+### **Sketch of Proposed Design** 
 
 ![](PICTURE/IMG_6915.jpg)
 
@@ -54,7 +70,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 # c.	Step -by-step Description on Data Visualization Design Process(c& d combine into one)
-### Action
+## **Action**
 
 Inspecting the raw excel data file
 
@@ -69,6 +85,7 @@ Extra Data Clean Process
 
 
 ## **Bar Chart**
+
 ![](PICTURE/Bar Chart.png)
 
 ![](PICTURE/Picture_2.png)
@@ -106,22 +123,26 @@ Also, year, as a filter, can flexibly compare the gender ratio of labor force in
 
 # d.	 Three Major Observations Revealed by the Data Visualization on Each Graph
 
-### Bar chart on total labor force difference between 2009 and 2019 
+### **Bar chart on total labor force difference between 2009 and 2019** 
 ![](PICTURE/Bar Chart.png)
 
 - The biggest difference was among those aged 65 to 69, with the labor force growing by nearly 16.3 percent in 2019
+
 - Only in the age group of 20 to 24 did the percentage of the labor force decrease
+
 - The percentage of the labor force as a whole is on the rise
 
 
-### Line Chart on Labor Force Change from 2009 to 2019 between Age Group 15-19
+### **Line Chart on Labor Force Change from 2009 to 2019 between Age Group 15-19**
 ![](PICTURE/Line Chart.png)
 
 - The percentage of the labor force was the highest in 2015 and reached 15.8 percent
+
 - The percentage of the labor force fell sharply from 2010 to 2011
+
 - The percentage of the labor force rose sharply from 2014 to 2015
 
-### Pyramid Chart
+### **Pyramid Chart**
 ![](PICTURE/picture_8.png)
 
 - The female workforce is substantially higher than the male workforce at ages above 65
