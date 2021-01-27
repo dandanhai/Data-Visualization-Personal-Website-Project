@@ -1,7 +1,7 @@
 ---
 title: "DataViz Makeover 01"
 description: |
-  A short description of the post.
+  Below is my first DataViz Makeovers assignment. First bar chart is my main chart. Besides, Pyramid and Line chart are for detail comparison.
 author:
   - name: Dan Hai
     url: https://example.com/norajones
@@ -29,7 +29,7 @@ knitr::opts_chunk$set(echo = FALSE)
 - The table at the bottom affects aesthetics. Readers need to spend more time extracting the data of each age group. At the same time, there are too many words in the icon, which makes it very cumbersome
 - While the text is too cumbersome, the two lines are too simple. The details of the lines should be changed
 
-# b.	Way to improve current design
+# b.	Way to Improve Current Design
 ### Critique from Clarity
 - Title needs to be precise. It can be changed as “Resident labor force change between Year 2009 and Year 2019 by age”
 - Add Y-axis as a reference on the chart and the calculation format should be percentage 
