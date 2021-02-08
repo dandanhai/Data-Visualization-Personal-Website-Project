@@ -1,7 +1,7 @@
 ---
 title: "DataViz Makeover 01"
 description: |
-  Below is my first DataViz Makeovers assignment. First bar chart is my main chart. Besides, Pyramid and Line chart are for detail comparison.
+  Below is my first DataViz Makeovers assignment. First bar chart is my main chart. Besides, Pyramid and Line chart are for detailed comparison.
 author:
   - name: Dan Hai
     url: https://www.singstat.gov.sg/
