@@ -1,5 +1,5 @@
 ---
-title: "My-second-post"
+title: "DataViz Makeover 02"
 description: |
   A short description of the post.
 author:
