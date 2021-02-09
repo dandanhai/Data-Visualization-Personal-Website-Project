@@ -1,13 +1,12 @@
 ---
 title: "Welcome to My Blog"
 description: |
-  Welcome to our new blog, My Blog. We hope you enjoy 
-  reading what we have to say!
+  Welcome to my blog, Data Visualization. This blog is present analysis through Tableau and R studio. Hope you are enjoy it!
 author:
   - name: Dan Hai 
-    url: https://example.com/norajones
-    affiliation: Spacely Sprockets
-    affiliation_url: https://example.com/spacelysprokets
+    url: http://linkedin.com/in/dan-hai-1283091b4
+    affiliation: Singapore Management University
+    affiliation_url: https://scis.smu.edu.sg/master-it-business
 date: 01-26-2021
 output:
   distill::distill_article:

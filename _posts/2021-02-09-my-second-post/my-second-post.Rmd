@@ -1,0 +1,38 @@
+---
+title: "My-second-post"
+description: |
+  A short description of the post.
+author:
+  - name: Dan Hai
+    url: http://linkedin.com/in/dan-hai-1283091b4
+date: 02-09-2021
+output:
+  html_document:
+    theme: united
+    toc: yes   #table of content
+    toc_float: yes
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# a.	Critique of Data Visualization
+```{r, out.width='70%',fig.align='center'}
+knitr::include_graphics('picture/example.png')
+```
+
+### **Clarity**
+- Apart from Strongly Agree and Strongly Disagree, the other three categories are not expressed, so accurate information cannot be obtained.
+
+- As 100% stacked bar chart, comparing the middle three categories iamoung those countries are difficult.
+
+- Reading the percentage value of strongly disagree is difficult
+
+- Reading the percentage value of the sum of strongly disagree and category 4 is difficult
+
+
+

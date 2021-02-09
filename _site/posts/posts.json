@@ -2,18 +2,18 @@
   {
     "path": "posts/welcome/",
     "title": "Welcome to My Blog",
-    "description": "Welcome to our new blog, My Blog. We hope you enjoy \nreading what we have to say!",
+    "description": "Welcome to my blog, Data Visualization. This blog is present analysis through Tableau and R studio. Hope you are enjoy it!",
     "author": [
       {
         "name": "Dan Hai",
-        "url": "https://example.com/norajones"
+        "url": "http://linkedin.com/in/dan-hai-1283091b4"
       }
     ],
     "date": "2021-01-26",
     "categories": [],
     "contents": "\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-01-26T23:57:04+08:00",
+    "last_modified": "2021-02-09T10:04:14+08:00",
     "input_file": "welcome.utf8.md"
   },
   {
