@@ -8,7 +8,6 @@ author:
 date: 01-26-2021
 output:
   html_document:
-    theme: united
     toc: yes   #table of content
     toc_float: yes
   distill::distill_article:
