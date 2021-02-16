@@ -7,10 +7,6 @@ author:
     url: http://linkedin.com/in/dan-hai-1283091b4
 date: 02-09-2021
 output:
-  html_document:
-    theme: united
-    toc: yes   #table of content
-    toc_float: yes
   distill::distill_article:
     self_contained: false
 ---

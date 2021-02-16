@@ -7,9 +7,6 @@ author:
     url: https://www.singstat.gov.sg/
 date: 01-26-2021
 output:
-  html_document:
-    toc: yes   #table of content
-    toc_float: yes
   distill::distill_article:
     self_contained: false
 ---
