@@ -78,3 +78,29 @@ knitr::include_graphics('picture/sketch.jpeg')
 
 ### **3.1 Data Preparetion
 
+1. Import Data into Tableau and union all the data
+
+
+```{r, out.width='20%',fig.align='left'}
+knitr::include_graphics('picture/1.PNG')
+```
+
+2. View the column and hide redundant column
+
+```{r, out.width='50%',fig.align='left'}
+knitr::include_graphics('picture/2.PNG')
+```
+
+3. Split the Country column and recode the column [vac_1]
+
+```{r, out.width='30%',fig.align='left'}
+knitr::include_graphics('picture/3.PNG')
+```
+
+fjdjfakdfnaksfndja
+
+```{r, out.width='50%',fig.align='left'}
+knitr::include_graphics('picture/4.PNG')
+```
+
+fasfbkasfkasfjnba
