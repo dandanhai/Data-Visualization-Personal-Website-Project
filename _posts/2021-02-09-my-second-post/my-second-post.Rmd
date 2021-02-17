@@ -16,12 +16,12 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# a.	Critique of Data Visualization
+#  **1.	Critique of Data Visualization**
 ```{r, out.width='90%',fig.align='center'}
 knitr::include_graphics('picture/example.png')
 ```
 
-### **Clarity**
+### **1.1 Clarity**
 - Apart from Strongly Agree and Strongly Disagree, the other three categories are not expressed the meaning, so accurate information from the legend cannot be obtained.
 
 - As 100% stacked bar chart, comparing the middle three categories among those countries are difficult.
@@ -32,7 +32,7 @@ knitr::include_graphics('picture/example.png')
 
 - The bar chart on the right is clear and easy to understand, but it is too simple
 
-### **Aesthetic**
+### **1.2 Aesthetic**
 
 - The distribution of the colors is not consistent enough. Strongly Agree/Strongly Agree should be used more brighten color.
 
@@ -42,8 +42,9 @@ knitr::include_graphics('picture/example.png')
 
 - The initial letter of country name is in lower case in both chart, which is not professional.
 
-# b.	Way to Improve Current Design
-### **Improve from Clarity**
+##	Way to Improve Current Design
+
+### **1.3 Improve from Clarity**
 
 - Add “2”, “3”, and “4” can be modified to “2 – Agree”, “3 – Neutral”, and “4 – Disagree” at the right legend to convenient the audience to understand
 
@@ -51,7 +52,7 @@ knitr::include_graphics('picture/example.png')
 
 - Add the reference line in the bar chart on the right
 
-### **Improve from Aesthetics**
+### **1.4 Improve from Aesthetics**
 
 - Use a more distinct color, gradient from red to dark blue
 
@@ -59,15 +60,21 @@ knitr::include_graphics('picture/example.png')
 
 - Change the initial letter of country name in upper case.
 
-### **Sketch of Proposed Design** 
+#  **2 Sketch of Proposed Design** 
 
-
+###  **2.1 Sketch**
 ```{r, out.width='80%',fig.align='center'}
 knitr::include_graphics('picture/sketch.jpeg')
 ```
+###  **2.2 Advantages of Propose Design**
+
 - We can clearly see from the figure that Britain's Bar Chart is on the far right, indicating strong opposition to vaccines. This is the advantage of Diverging Stack Bar Chart. Also, I added a clear legend to make the audience easy to visualize the chart. The progression of colors also has a visual effect, such as strong agree is red and agree is pink
 
 
 -__I have an idea to separate the neutral part and make a bar chart, so that the effect of diverging bar chart will be better.__ I will try to show it is possible to present in the final dashboard.
 
+
+#  **3 Step -by-step Description on Data Visualization Design Process**
+
+### **3.1 Data Preparetion
 
