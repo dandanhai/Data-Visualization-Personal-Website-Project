@@ -17,20 +17,20 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 # a.	Critique of Data Visualization
-```{r, out.width='70%',fig.align='center'}
+```{r, out.width='90%',fig.align='center'}
 knitr::include_graphics('picture/example.png')
 ```
 
 ### **Clarity**
-- Apart from Strongly Agree and Strongly Disagree, the other three categories are not expressed, so accurate information cannot be obtained.
+- Apart from Strongly Agree and Strongly Disagree, the other three categories are not expressed the meaning, so accurate information from the legend cannot be obtained.
 
 - As 100% stacked bar chart, comparing the middle three categories among those countries are difficult.
 
-- Reading the percentage value of strongly disagree is difficult
-
-- Reading the percentage value of the sum of strongly disagree and category 4 is difficult
+- Reading the percentage value of strongly disagree is difficult. Also reading the percentage value of the sum of strongly disagree and category 4 is difficult
 
 - As 100% stacked bar chart, it is not clear how much support each country has for vaccines
+
+- The bar chart on the right is clear and easy to understand, but it is too simple
 
 ### **Aesthetic**
 
@@ -40,12 +40,16 @@ knitr::include_graphics('picture/example.png')
 
 - It is not a excellent data visualization since I want to compare different country's opinion on pro-vaccine. So I believe it is better to change to diverging stacked bar chart in the view of comparison.
 
+- The initial letter of country name is in lower case in both chart, which is not professional.
+
 # b.	Way to Improve Current Design
 ### **Improve from Clarity**
 
-- Add agree/ neutral/disagree to legend at the far left to convenient the audience to understand
+- Add “2”, “3”, and “4” can be modified to “2 – Agree”, “3 – Neutral”, and “4 – Disagree” at the right legend to convenient the audience to understand
 
 - Diverging stacked bar chart is more suitable with the comparison
+
+- Add the reference line in the bar chart on the right
 
 ### **Improve from Aesthetics**
 
@@ -53,13 +57,15 @@ knitr::include_graphics('picture/example.png')
 
 - It is recommended to use diverging stacked bar chart and create Gantt Percent, which can represent the each category with better data visualization.
 
+- Change the initial letter of country name in upper case.
+
 ### **Sketch of Proposed Design** 
 
 
 ```{r, out.width='80%',fig.align='center'}
 knitr::include_graphics('picture/sketch.jpeg')
 ```
-- First of all, we can clearly see from the figure that Britain's Bar Chart is on the far right, indicating strong opposition to vaccines. This is the advantage of Diverging Stack Bar Chart.
+- We can clearly see from the figure that Britain's Bar Chart is on the far right, indicating strong opposition to vaccines. This is the advantage of Diverging Stack Bar Chart. Also, I added a clear legend to make the audience easy to visualize the chart. The progression of colors also has a visual effect, such as strong agree is red and agree is pink
 
 
 -__I have an idea to separate the neutral part and make a bar chart, so that the effect of diverging bar chart will be better.__ I will try to show it is possible to present in the final dashboard.
