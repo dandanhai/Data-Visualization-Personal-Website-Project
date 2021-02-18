@@ -91,16 +91,133 @@ knitr::include_graphics('picture/1.PNG')
 knitr::include_graphics('picture/2.PNG')
 ```
 
-3. Split the Country column and recode the column [vac_1]
+3. Split [Table Name] and render the column name as [country]
 
 ```{r, out.width='30%',fig.align='left'}
 knitr::include_graphics('picture/3.PNG')
 ```
 
-fjdjfakdfnaksfndja
+Tableau can help us break up the whole column with ' . '.
+
+```{r, out.width='50%',fig.align='left'}
+knitr::include_graphics('picture/5.PNG')
+```
+
+Now we get the clean country column.
+
+4. Use Create Calculated Field to redefine [vac_1]
 
 ```{r, out.width='50%',fig.align='left'}
 knitr::include_graphics('picture/4.PNG')
 ```
 
-fasfbkasfkasfjnba
+Formula is 6-int(left([vac_1],1)). The reason for using this formula is that I want strong disagreement and agreement to be shown as negative axis in the diverging stacked bar
+
+5. Create Number of record, Total count and Percentage column
+
+```{r, out.width='50%',fig.align='left'}
+knitr::include_graphics('picture/6.PNG')
+knitr::include_graphics('picture/7.PNG')
+knitr::include_graphics('picture/8.PNG')
+```
+
+
+6. Create Total count negative, Total count and Gantt Start column
+
+```{r, out.width='50%',fig.align='left'}
+knitr::include_graphics('picture/9.PNG')
+knitr::include_graphics('picture/10.PNG')
+```
+
+```{r, out.width='70%',fig.align='left'}
+knitr::include_graphics('picture/11.PNG')
+```
+
+7. Create Gantt Percentage
+
+```{r, out.width='70%',fig.align='left'}
+knitr::include_graphics('picture/12.PNG')
+```
+
+Explanation :ZN(expression) returns the expression if it is not null, otherwise returns zero. Use this function to use zero values instead of null values. 
+
+ 
+### **3.2 Data Visualization
+
+1. Change score into dimension
+
+```{r, out.width='70%',fig.align='left'}
+knitr::include_graphics('picture/13.PNG')
+```
+
+
+2. Aliases Score and Country Column
+
+```{r, out.width='80%',fig.align='left'}
+knitr::include_graphics('picture/15.PNG')
+```
+
+```{r, out.width='50%',fig.align='left'}
+knitr::include_graphics('picture/16.PNG')
+```
+
+Now we can see that in this score column 1 stands for Strongly Disagree and 2 stands for Agree. At the same time, we revised the first capital letter of each country, which make it looks more formal.
+
+3.Drag score to Fliters, Grand Percentage to Column and country to Row
+
+```{r, out.width='80%',fig.align='left'}
+knitr::include_graphics('picture/17.PNG')
+```
+
+```{r, out.width='30%',fig.align='left'}
+knitr::include_graphics('picture/18.PNG')
+```
+
+At the same time of this step, we set Chart as Gantt Bar.
+
+4.Drag Percentage to Size and Country to Detail
+
+```{r, out.width='80%',fig.align='left'}
+knitr::include_graphics('picture/19.PNG')
+```
+
+```{r, out.width='30%',fig.align='left'}
+knitr::include_graphics('picture/20.PNG')
+```
+
+While we are doing this, we set up the colors and choose an appropriate theme for color.
+
+5. Add household size, gender and employment status to dig insight information
+
+```{r, out.width='30%',fig.align='left'}
+knitr::include_graphics('picture/21.PNG')
+```
+
+Finally, it was found that household size had an obvious impact on attitudes towards vaccines，so we retained this Filters.
+
+#### Dashboard 1
+
+1. Add title
+Add title : “Willingness of the public on Covid-19 vaccination from different countries and hoursehold size” with green background
+
+2. Add commentary
+**Using Objects > Text > drag to bottom of title and add:
+“Although labour force participation rate (LPFR) across all age groups has increased from 2009 to 2019, the significant increase in older workers' (55-64 and 65+) participation has shifted the labour force’s distribution towards an older labour force. This shift is due to multitude of reasons, namely aging population due to low birth rates, extended retirement age, longer average lifespan, etc.”**
+
+
+3. Add source
+Using Objects > Text > drag to bottom left and add :
+“Source: Ministry of Manpower Singapore (https://www.mom.gov.sg/)
+Original report:https://stats.mom.gov.sg/Pages/Labour-Force-In-Singapore-2019.aspx
+The raw data: https://stats.mom.gov.sg/Pages/Labour-Force-Tables2019.aspx”
+
+4. Add author
+Add text to bottom left corner and add text : “DataViz Makeover #1 by @suyiinang” align left.
+
+# 4. Final Visualization
+
+4.1 Snapshot of Dashboard
+
+
+4.2 Main observations
+
