@@ -117,7 +117,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["my-second-post_files/anchor-4.2.2/anchor.min.js","my-second-post_files/bowser-1.9.3/bowser.min.js","my-second-post_files/distill-2.2.21/template.v2.js","my-second-post_files/jquery-1.11.3/jquery.min.js","my-second-post_files/popper-2.6.0/popper.min.js","my-second-post_files/tippy-6.2.7/tippy-bundle.umd.min.js","my-second-post_files/tippy-6.2.7/tippy-light-border.css","my-second-post_files/tippy-6.2.7/tippy.css","my-second-post_files/tippy-6.2.7/tippy.umd.min.js","my-second-post_files/webcomponents-2.0.0/webcomponents.js","Picture/1.png","Picture/10.png","Picture/11.png","Picture/12.png","Picture/13.png","Picture/14.png","Picture/15.png","Picture/16.png","Picture/17.png","Picture/18.png","Picture/19.png","Picture/2.png","Picture/20.png","Picture/21.png","Picture/3.png","Picture/4.png","Picture/5.png","Picture/6.png","Picture/7.png","Picture/8.png","Picture/9.png","Picture/example.png","Picture/excel_change.png","Picture/Screenshot 2021-02-16 at 6.29.08 PM.png","Picture/Screenshot 2021-02-16 at 6.29.32 PM.png","Picture/sketch.jpeg"]}
+  {"type":"character","attributes":{},"value":["my-second-post_files/anchor-4.2.2/anchor.min.js","my-second-post_files/bowser-1.9.3/bowser.min.js","my-second-post_files/distill-2.2.21/template.v2.js","my-second-post_files/jquery-1.11.3/jquery.min.js","my-second-post_files/popper-2.6.0/popper.min.js","my-second-post_files/tippy-6.2.7/tippy-bundle.umd.min.js","my-second-post_files/tippy-6.2.7/tippy-light-border.css","my-second-post_files/tippy-6.2.7/tippy.css","my-second-post_files/tippy-6.2.7/tippy.umd.min.js","my-second-post_files/webcomponents-2.0.0/webcomponents.js","Picture/1.png","Picture/10.png","Picture/11.png","Picture/12.png","Picture/13.png","Picture/14.png","Picture/15.png","Picture/16.png","Picture/17.png","Picture/18.png","Picture/19.png","Picture/2.png","Picture/20.png","Picture/21.png","Picture/3.png","Picture/4.png","Picture/5.png","Picture/6.png","Picture/7.png","Picture/8.png","Picture/9.png","Picture/example.png","Picture/excel_change.png","Picture/scartch_chart.jpeg","Picture/Screenshot 2021-02-16 at 6.29.08 PM.png","Picture/Screenshot 2021-02-16 at 6.29.32 PM.png","Picture/sketch.jpeg"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2106,10 +2106,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <h3 id="clarity"><strong>1.1 Clarity</strong></h3>
 <ul>
 <li><p>Apart from Strongly Agree and Strongly Disagree, the other three categories are not expressed the meaning, so accurate information from the legend cannot be obtained.</p></li>
-<li><p>As 100% stacked bar chart, comparing the middle three categories among those countries are difficult.</p></li>
+<li><p>As 100% stacked bar chart, it is not clear how much support each country has for vaccines, comparing the middle three categories among those countries are difficult.</p></li>
 <li><p>Reading the percentage value of strongly disagree is difficult. Also reading the percentage value of the sum of strongly disagree and category 4 is difficult</p></li>
-<li><p>As 100% stacked bar chart, it is not clear how much support each country has for vaccines</p></li>
-<li><p>The bar chart on the right is clear and easy to understand, but it is too simple</p></li>
+<li><p>The bar chart on the right is clear and easy to understand, also it is sorted for the audience to read. However, it could be improve by using uncertainty</p></li>
 </ul>
 <h3 id="aesthetic"><strong>1.2 Aesthetic</strong></h3>
 <ul>
@@ -2117,24 +2116,28 @@ document.addEventListener('DOMContentLoaded', function() {
 <li><p>Legend on the right top corner is vague.</p></li>
 <li><p>It is not a excellent data visualization since I want to compare different country’s opinion on pro-vaccine. So I believe it is better to change to diverging stacked bar chart in the view of comparison.</p></li>
 <li><p>The initial letter of country name is in lower case in both chart, which is not professional.</p></li>
+<li><p>Color scale can be better chosen to reflect ordinal data type, which color scale can be more efficiently used.</p></li>
+<li><p>There is a typo in Chart 1 title, as vaccine is mis-spelling as “vacinne”</p></li>
 </ul>
 <h2 id="way-to-improve-current-design">Way to Improve Current Design</h2>
 <h3 id="improve-from-clarity"><strong>1.3 Improve from Clarity</strong></h3>
 <ul>
 <li><p>Add “2”, “3”, and “4” can be modified to “2 – Agree”, “3 – Neutral”, and “4 – Disagree” at the right legend to convenient the audience to understand</p></li>
-<li><p>Diverging stacked bar chart is more suitable with the comparison</p></li>
-<li><p>Add the reference line in the bar chart on the right</p></li>
+<li><p>Diverging stacked bar chart is more suitable with the comparison by showing the negative percentge reperesent the strongly disagree and disagree.</p></li>
+<li><p>When drawing many samples from a population, it is possible to obtain a few with means that greatly differ from the population. So we can use uncertainy by adding standard error for the bar chart in the right side.</p></li>
+<li><p>For greater clarity, the exact survey question will be stated in the visualization so that the user is able to know exactly what is the question of vac_1.</p></li>
 </ul>
 <h3 id="improve-from-aesthetics"><strong>1.4 Improve from Aesthetics</strong></h3>
 <ul>
-<li><p>Use a more distinct color, gradient from red to dark blue</p></li>
+<li><p>Instead of using 5 separate colors, we can use a more distinct color such as gradient from red to dark blue.</p></li>
 <li><p>It is recommended to use diverging stacked bar chart and create Gantt Percent, which can represent the each category with better data visualization.</p></li>
 <li><p>Change the initial letter of country name in upper case.</p></li>
+<li><p>Change the typo by its correct form “vaccine”</p></li>
 </ul>
 <h1 id="sketch-of-proposed-design"><strong>2 Sketch of Proposed Design</strong></h1>
 <h3 id="sketch"><strong>2.1 Sketch</strong></h3>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="Picture/sketch.jpeg" width="80%" style="display: block; margin: auto;" /></p>
+<p><img src="Picture/scartch_chart.jpeg" width="80%" style="display: block; margin: auto;" /></p>
 </div>
 <h3 id="advantages-of-propose-design"><strong>2.2 Advantages of Propose Design</strong></h3>
 <ul>

@@ -24,13 +24,13 @@ knitr::include_graphics('picture/example.png')
 ### **1.1 Clarity**
 - Apart from Strongly Agree and Strongly Disagree, the other three categories are not expressed the meaning, so accurate information from the legend cannot be obtained.
 
-- As 100% stacked bar chart, comparing the middle three categories among those countries are difficult.
+- As 100% stacked bar chart, it is not clear how much support each country has for vaccines, comparing the middle three categories among those countries are difficult.
 
 - Reading the percentage value of strongly disagree is difficult. Also reading the percentage value of the sum of strongly disagree and category 4 is difficult
 
-- As 100% stacked bar chart, it is not clear how much support each country has for vaccines
+- The bar chart on the right is clear and easy to understand, also it is sorted for the audience to read. However, it could be improve by using uncertainty
 
-- The bar chart on the right is clear and easy to understand, but it is too simple
+
 
 ### **1.2 Aesthetic**
 
@@ -42,29 +42,37 @@ knitr::include_graphics('picture/example.png')
 
 - The initial letter of country name is in lower case in both chart, which is not professional.
 
+- Color scale can be better chosen to reflect ordinal data type, which color scale can be more efficiently used.
+
+- There is a typo in Chart 1 title, as vaccine is mis-spelling as “vacinne”
+
 ##	Way to Improve Current Design
 
 ### **1.3 Improve from Clarity**
 
 - Add “2”, “3”, and “4” can be modified to “2 – Agree”, “3 – Neutral”, and “4 – Disagree” at the right legend to convenient the audience to understand
 
-- Diverging stacked bar chart is more suitable with the comparison
+- Diverging stacked bar chart is more suitable with the comparison by showing the negative percentge reperesent the strongly disagree and disagree.
 
-- Add the reference line in the bar chart on the right
+- When drawing many samples from a population, it is possible to obtain a few with means that greatly differ from the population. So we can use uncertainy by adding standard error for the bar chart in the right side.
+
+- For greater clarity, the exact survey question will be stated in the visualization so that the user is able to know exactly what is the question of vac_1.
 
 ### **1.4 Improve from Aesthetics**
 
-- Use a more distinct color, gradient from red to dark blue
+- Instead of using 5 separate colors, we can use a more distinct color such as gradient from red to dark blue. 
 
 - It is recommended to use diverging stacked bar chart and create Gantt Percent, which can represent the each category with better data visualization.
 
 - Change the initial letter of country name in upper case.
 
+- Change the typo by its correct form "vaccine"
+
 #  **2 Sketch of Proposed Design** 
 
 ###  **2.1 Sketch**
 ```{r, out.width='80%',fig.align='center'}
-knitr::include_graphics('picture/sketch.jpeg')
+knitr::include_graphics('picture/scartch_chart.jpeg')
 ```
 ###  **2.2 Advantages of Propose Design**
 
