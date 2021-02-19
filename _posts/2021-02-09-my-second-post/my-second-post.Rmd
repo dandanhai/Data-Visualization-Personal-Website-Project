@@ -75,16 +75,16 @@ knitr::include_graphics('picture/example.png')
 knitr::include_graphics('picture/scartch_chart.jpeg')
 ```
 ###  **2.2 Advantages of Propose Design**
+**Please view the visualization on Tableau Public
+[https://public.tableau.com/profile/dan.hai#!/vizhome/Divergingstackedbarchart/Dashboard1?publish=yes]**
 
-- We can clearly see from the figure that Britain's Bar Chart is on the far right, indicating strong opposition to vaccines. This is the advantage of Diverging Stack Bar Chart. Also, I added a clear legend to make the audience easy to visualize the chart. The progression of colors also has a visual effect, such as strong agree is red and agree is pink
+- We can clearly see from the figure that Britain's Bar Chart is on the far right, indicating strong opposition to vaccines. This is the advantage of Diverging Stack Bar Chart to view each segment of opinion with Likert Scale data. Also, I added a clear legend to make the audience easy to visualize the chart. The progression of colors also has a visual effect, such as strong agree is red and agree is pink. 
 
-
--__I have an idea to separate the neutral part and make a bar chart, so that the effect of diverging bar chart will be better.__ I will try to show it is possible to present in the final dashboard.
-
+- The standard deviation is a property of the population. It tells us how much spread there is among individual observations we could make.So when we applied the uncertainty to the bar chart with the population data. It is a more appropriate and precise way to present the data visualization. And we can clear see the range from confidence interval within 95%.
 
 #  **3 Step -by-step Description on Data Visualization Design Process**
 
-### **3.1 Data Preparetion
+### **3.1.1 Data Preparetion for Diverging Stacked Bar Chart**
 
 1. Import Data into Tableau and union all the data
 
@@ -105,7 +105,7 @@ knitr::include_graphics('picture/2.PNG')
 knitr::include_graphics('picture/3.PNG')
 ```
 
-Tableau can help us break up the whole column with ' . '.
+Tableau can help us break up the whole column with ' . '
 
 ```{r, out.width='50%',fig.align='left'}
 knitr::include_graphics('picture/5.PNG')
@@ -114,6 +114,8 @@ knitr::include_graphics('picture/5.PNG')
 Now we get the clean country column.
 
 4. Use Create Calculated Field to redefine [vac_1]
+
+**When creating score column, I changed Strongly Agree to the lowest value, 1, and then increased it to the highest value, 5. The purpose is to present strongly disagree and disagree in the negative region**
 
 ```{r, out.width='50%',fig.align='left'}
 knitr::include_graphics('picture/4.PNG')
@@ -150,11 +152,11 @@ knitr::include_graphics('picture/12.PNG')
 Explanation :ZN(expression) returns the expression if it is not null, otherwise returns zero. Use this function to use zero values instead of null values. 
 
  
-### **3.2 Data Visualization
+### 3.1.2 Data Visualization for Diverging Stacked Bar Chart
 
 1. Change score into dimension
 
-```{r, out.width='70%',fig.align='left'}
+```{r, out.width='40%',fig.align='left'}
 knitr::include_graphics('picture/13.PNG')
 ```
 
@@ -203,29 +205,122 @@ knitr::include_graphics('picture/21.PNG')
 
 Finally, it was found that household size had an obvious impact on attitudes towards vaccines，so we retained this Filters.
 
-#### Dashboard 1
+### **3.2.1 Data Preparation for Uncertainty Bar Chart**
 
-1. Add title
-Add title : “Willingness of the public on Covid-19 vaccination from different countries and hoursehold size” with green background
+1.  Creating Calculated Fields and Parameters
+- Create a new worksheet and rename it as ‘Uncertainty Chart’. The first step would be to create the necessary calculated fields and parameters. And I create a new score proportion to use to count the number of strongly disagree
 
-2. Add commentary
-**Using Objects > Text > drag to bottom of title and add:
-“Although labour force participation rate (LPFR) across all age groups has increased from 2009 to 2019, the significant increase in older workers' (55-64 and 65+) participation has shifted the labour force’s distribution towards an older labour force. This shift is due to multitude of reasons, namely aging population due to low birth rates, extended retirement age, longer average lifespan, etc.”**
+```{r, out.width='80%',fig.align='left'}
+knitr::include_graphics('picture/a.PNG')
+knitr::include_graphics('picture/b.PNG')
+```
+
+- Creating a calculated field for Prop: proportion is generate by using the sum number of strongly agree divide by the sum number of total
+
+```{r, out.width='80%',fig.align='left'}
+knitr::include_graphics('picture/c.PNG')
+```
+
+- Creating a calculated field for Prop_SE: standard error is calculate by proportion multiplied by (1 - proportion). Then this number divided by the sum of the number of records. In the end, using square root for the calculated number.
+
+```{r, out.width='80%',fig.align='left'}
+knitr::include_graphics('picture/d.PNG')
+```
+
+- Creating a calculated field for Z_95%: Z = 1.959964
+
+```{r, out.width='80%',fig.align='left'}
+knitr::include_graphics('picture/e.PNG')
+```
+
+- Creating a calculated field for Prop_Margin of Error: Formula for margin of error is the Z_95% multiplied by the standard error.
+
+```{r, out.width='80%',fig.align='left'}
+knitr::include_graphics('picture/f.PNG')
+```
+
+- Creating a calculated field for Prop_Upper Limit 95% and Prop_lower Limit 95%
 
 
-3. Add source
+```{r, out.width='80%',fig.align='left'}
+knitr::include_graphics('picture/g.PNG')
+knitr::include_graphics('picture/h.PNG')
+```
+
+### **3.2.2 Data Visualization for Uncertainty Bar Chart**
+
+
+1.Add score to filter to exclude NULL variable
+
+2.Prop is added to Columns and Country is added to Rows
+
+```{r, out.width='80%',fig.align='left'}
+knitr::include_graphics('picture/i.PNG')
+```
+
+3. Add measure value to the black above country.Then Measure Values is added to columns. The next step is , remove all items except for AGG(Prop_Lower Limit 95%) and AGG(Prop_Upper Limit 95%) under the Measure Values pane.
+
+```{r, out.width='70%',fig.align='left'}
+knitr::include_graphics('picture/j.PNG')
+```
+
+```{r, out.width='30%',fig.align='center'}
+knitr::include_graphics('picture/k.PNG')
+```
+
+4. Move the Measure Value in front of Prop. Then click on the down arrow on Measure Values and select dual axis.
+
+```{r, out.width='30%',fig.align='left'}
+knitr::include_graphics('picture/l.PNG')
+```
+
+```{r, out.width='30%',fig.align='left'}
+knitr::include_graphics('picture/m.PNG')
+```
+
+5. Change the Measure Values in the mark section into chart, and drag Measure Name in the the icon path
+
+```{r, out.width='30%',fig.align='left'}
+knitr::include_graphics('picture/n.PNG')
+knitr::include_graphics('picture/o.PNG')
+
+```
+#### **Dashboard** 
+
+1.Add title:
+
+First graph add title : “Willingness of the public on Covid-19 vaccination from different countries and household size” with green background
+
+Second graph add title : "Percentage of Strongly Agree with 95% CI" with green background
+
+2.Add commentary: 
+
+On the top and add text: “If you want to compare the influence of household on the attitude towards vaccines, you can use filter function. We observed that in France, the smaller the household, the more negative the attitude towards vaccines"
+
+
+3.Add source:
+
 Using Objects > Text > drag to bottom left and add :
-“Source: Ministry of Manpower Singapore (https://www.mom.gov.sg/)
-Original report:https://stats.mom.gov.sg/Pages/Labour-Force-In-Singapore-2019.aspx
-The raw data: https://stats.mom.gov.sg/Pages/Labour-Force-Tables2019.aspx”
+““Source: Imperial College London YouGov Covid 19 Behaviour Tracker Data Hub (https://github.com/YouGov-Data/covid-19-tracker)"
 
-4. Add author
-Add text to bottom left corner and add text : “DataViz Makeover #1 by @suyiinang” align left.
 
-# 4. Final Visualization
+4.Add author:
+
+Add text to bottom right corner and add text : “Author: Dan Hai”.
+
+
+# **4. Final Visualization**
 
 4.1 Snapshot of Dashboard
 
+```{r, out.width='200%',fig.align='left'}
+knitr::include_graphics('picture/p.PNG')
+```
 
 4.2 Main observations
 
+1. As can be seen from diverging stacked bar chart, compared with other countries, the percentage of French people who strongly agree is the highest.
+
+2. Also in the stacked bar chart, it can be seen that the United Kingdom has the highest degree of acceptance of vaccines, because the bar chart is on the far right, and the proportion of strongly agree is also the highest, followed by Denmark
+
+3. As can be seen from the second Proportion chart, the United Kingdom has the highest degree of Strongly Agree, Japan has the lowest degree of Strongly Agree. And South Korea and Netherlands have the widest confidence interval, which are range from 24% to 27% and range from 39% to 44%.
