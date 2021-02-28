@@ -1,7 +1,7 @@
 ---
 title: "DataViz Makeover 02"
 description: |
-  This blog is creating a data visualization of public will for Covid-19 vaccination. There are two main charts, which I use: Diverging Stacked Bar Charts and Bar Charts with Uncertainty
+  This blog is creating a data visualization of public willingness for Covid-19 vaccination. There are two main charts, which I use: Diverging Stacked Bar Charts and Bar Charts with Uncertainty
 author:
   - name: Dan Hai
     url: http://linkedin.com/in/dan-hai-1283091b4
@@ -75,8 +75,11 @@ knitr::include_graphics('picture/example.png')
 knitr::include_graphics('picture/scartch_chart.jpeg')
 ```
 ###  **2.2 Advantages of Propose Design**
-**Please view the visualization on Tableau Public
-[https://public.tableau.com/profile/dan.hai#!/vizhome/Divergingstackedbarchart/Dashboard1?publish=yes]**
+**Please view the visualization on
+<a href="https://public.tableau.com/profile/dan.hai#!/vizhome/Divergingstackedbarchart/Dashboard1?publish=yes">Tableau Public</a> **
+
+
+
 
 - We can clearly see from the figure that United Kingdom is on the far right, indicating strong opposition to vaccines. This is the advantage of Diverging Stack Bar Chart to view each segment of opinion with Likert Scale data. Also, I added a clear legend to make the audience easy to visualize the chart. The progression of colors also has a visual effect, such as strong agree is red and agree is pink. 
 
@@ -89,13 +92,13 @@ knitr::include_graphics('picture/scartch_chart.jpeg')
 1. Import Data into Tableau and union all the data
 
 
-```{r, out.width='20%',fig.align='left'}
+```{r, out.width='40%',fig.align='left'}
 knitr::include_graphics('picture/1.PNG')
 ```
 
 2. View the column and hide redundant column
 
-```{r, out.width='50%',fig.align='left'}
+```{r, out.width='80%',fig.align='left'}
 knitr::include_graphics('picture/2.PNG')
 ```
 
