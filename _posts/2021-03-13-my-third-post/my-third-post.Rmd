@@ -20,17 +20,42 @@ knitr::opts_chunk$set(echo = FALSE)
 knitr::include_graphics('picture/1.PNG')
 ```
 
-### **1.1 Clarity**
 
 
-### **1.2 Aesthetic**
+### **1.1 Clarity Issue**
+- The color matching of the map ignores the problem of red-green colorblindness, which seems to be a small problem. However, there are an estimated 300 million colorblind people worldwide. 
+- There is a lot of useful information in our dataset, but when we open Tableau Public and look at the information for each location, there is very little information in Tooltips.
+- In the line chart on the right, the range of Y-axis is different, which may easily lead to misunderstanding.
 
+- One great advantages of using line chart is to show tendency, while bar chart can better show distribution.
+
+- In fact, in the map on the left, if you look at it alone, you can only find differences in the density distribution, and you can't really get anything more insight.
+
+### **1.2 Aesthetic Issue**
+- The color of the map is too dark, it is not aesthetically pleasing, we can try a different background.
+
+- The figure on the right looks particularly messy and does not compare trends in each column. Can not get obvious information.
+
+- The colors on the right are also very monotonous. Can try to enrich a simple line chart
 
 ### **1.3 Improve from Clarity**
 
+- Change the green and replace it with dark brown for easily distinct purpose.
+
+```{r, out.width='40%',fig.align='center'}
+knitr::include_graphics('picture/change_color.PNG')
+```
+
+- Add notes and subtypes to tooltips so that viewers can click on each location to see more information on each conflict.
+- Change the Y-axis to the same value to avoid misleading.
+- A bar chart can be used to show the distribution with the Y axis as the country and the X axis as the event type
+- Add a map, aggregate all the cases, and then divide them by countries. By comparing the size of the circle, the conflict degree of each country can be obtained
 
 ### **1.4 Improve from Aesthetics**
+- In Tableau, click Map Background Function and change it as 'outdoors'.
 
+- Can do it in Tableau by dragging Event Type into color square box, but it is best to use with bar chart instead of line chart.
+- Add a pie chart to the tooltip to show the proportion of event types for each country.
 
 #  **2 Sketch of Proposed Design** 
 

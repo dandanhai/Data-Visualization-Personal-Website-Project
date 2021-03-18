@@ -117,7 +117,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["my-third-post_files/anchor-4.2.2/anchor.min.js","my-third-post_files/bowser-1.9.3/bowser.min.js","my-third-post_files/distill-2.2.21/template.v2.js","my-third-post_files/jquery-1.11.3/jquery.min.js","my-third-post_files/popper-2.6.0/popper.min.js","my-third-post_files/tippy-6.2.7/tippy-bundle.umd.min.js","my-third-post_files/tippy-6.2.7/tippy-light-border.css","my-third-post_files/tippy-6.2.7/tippy.css","my-third-post_files/tippy-6.2.7/tippy.umd.min.js","my-third-post_files/webcomponents-2.0.0/webcomponents.js","picture/1.png"]}
+  {"type":"character","attributes":{},"value":["my-third-post_files/anchor-4.2.2/anchor.min.js","my-third-post_files/bowser-1.9.3/bowser.min.js","my-third-post_files/distill-2.2.21/template.v2.js","my-third-post_files/jquery-1.11.3/jquery.min.js","my-third-post_files/popper-2.6.0/popper.min.js","my-third-post_files/tippy-6.2.7/tippy-bundle.umd.min.js","my-third-post_files/tippy-6.2.7/tippy-light-border.css","my-third-post_files/tippy-6.2.7/tippy.css","my-third-post_files/tippy-6.2.7/tippy.umd.min.js","my-third-post_files/webcomponents-2.0.0/webcomponents.js","picture/1.png","picture/change_color.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2416,10 +2416,39 @@ d-appendix d-footnote-list a.footnote-backlink {
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="picture/1.png" width="100%" style="display: block; margin: auto;" /></p>
 </div>
-<h3 id="clarity"><strong>1.1 Clarity</strong></h3>
-<h3 id="aesthetic"><strong>1.2 Aesthetic</strong></h3>
+<h3 id="clarity-issue"><strong>1.1 Clarity Issue</strong></h3>
+<ul>
+<li><p>The color matching of the map ignores the problem of red-green colorblindness, which seems to be a small problem. However, there are an estimated 300 million colorblind people worldwide.</p></li>
+<li><p>There is a lot of useful information in our dataset, but when we open Tableau Public and look at the information for each location, there is very little information in Tooltips.</p></li>
+<li><p>In the line chart on the right, the range of Y-axis is different, which may easily lead to misunderstanding.</p></li>
+<li><p>One great advantages of using line chart is to show tendency, while bar chart can better show distribution.</p></li>
+<li><p>In fact, in the map on the left, if you look at it alone, you can only find differences in the density distribution, and you can’t really get anything more insight.</p></li>
+</ul>
+<h3 id="aesthetic-issue"><strong>1.2 Aesthetic Issue</strong></h3>
+<ul>
+<li><p>The color of the map is too dark, it is not aesthetically pleasing, we can try a different background.</p></li>
+<li><p>The figure on the right looks particularly messy and does not compare trends in each column. Can not get obvious information.</p></li>
+<li><p>The colors on the right are also very monotonous. Can try to enrich a simple line chart</p></li>
+</ul>
 <h3 id="improve-from-clarity"><strong>1.3 Improve from Clarity</strong></h3>
+<ul>
+<li>Change the green and replace it with dark brown for easily distinct purpose.</li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="picture/change_color.png" width="40%" style="display: block; margin: auto;" /></p>
+</div>
+<ul>
+<li>Add notes and subtypes to tooltips so that viewers can click on each location to see more information on each conflict.</li>
+<li>Change the Y-axis to the same value to avoid misleading.</li>
+<li>A bar chart can be used to show the distribution with the Y axis as the country and the X axis as the event type</li>
+<li>Add a map, aggregate all the cases, and then divide them by countries. By comparing the size of the circle, the conflict degree of each country can be obtained</li>
+</ul>
 <h3 id="improve-from-aesthetics"><strong>1.4 Improve from Aesthetics</strong></h3>
+<ul>
+<li><p>In Tableau, click Map Background Function and change it as ‘outdoors’.</p></li>
+<li><p>Can do it in Tableau by dragging Event Type into color square box, but it is best to use with bar chart instead of line chart.</p></li>
+<li><p>Add a pie chart to the tooltip to show the proportion of event types for each country.</p></li>
+</ul>
 <h1 id="sketch-of-proposed-design"><strong>2 Sketch of Proposed Design</strong></h1>
 <h3 id="sketch"><strong>2.1 Sketch</strong></h3>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
