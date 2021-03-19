@@ -117,7 +117,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["my-third-post_files/anchor-4.2.2/anchor.min.js","my-third-post_files/bowser-1.9.3/bowser.min.js","my-third-post_files/distill-2.2.21/template.v2.js","my-third-post_files/jquery-1.11.3/jquery.min.js","my-third-post_files/popper-2.6.0/popper.min.js","my-third-post_files/tippy-6.2.7/tippy-bundle.umd.min.js","my-third-post_files/tippy-6.2.7/tippy-light-border.css","my-third-post_files/tippy-6.2.7/tippy.css","my-third-post_files/tippy-6.2.7/tippy.umd.min.js","my-third-post_files/webcomponents-2.0.0/webcomponents.js","picture/1.png","picture/change_color.png","picture/skatch.jpeg"]}
+  {"type":"character","attributes":{},"value":["my-third-post_files/anchor-4.2.2/anchor.min.js","my-third-post_files/bowser-1.9.3/bowser.min.js","my-third-post_files/distill-2.2.21/template.v2.js","my-third-post_files/jquery-1.11.3/jquery.min.js","my-third-post_files/popper-2.6.0/popper.min.js","my-third-post_files/tippy-6.2.7/tippy-bundle.umd.min.js","my-third-post_files/tippy-6.2.7/tippy-light-border.css","my-third-post_files/tippy-6.2.7/tippy.css","my-third-post_files/tippy-6.2.7/tippy.umd.min.js","my-third-post_files/webcomponents-2.0.0/webcomponents.js","picture/1.png","picture/10.png","picture/11.png","picture/12.png","picture/13.png","picture/14.png","picture/15.png","picture/16.png","picture/17.png","picture/2.png","picture/3.png","picture/4.png","picture/5.png","picture/6.png","picture/7.png","picture/8.png","picture/9.png","picture/change_color.png","picture/skatch.jpeg","picture/sort.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2460,6 +2460,113 @@ d-appendix d-footnote-list a.footnote-backlink {
 <li><p>My improvement is I want to use two maps in a dashboard, the first one is the initial figure prof give to us in the assignment, I put the background into OUTDOORS and added more information in the tooltips , the second map is on the sketch above, I hope the audience can quickly know the number of national conflict. At the same time, through pie chart, detailed information about event type percentage are on the tooltips.</p></li>
 <li><p>The following sketch from the bottom can also form a dashboard. The bar chart on the left shows the comparison of the total number of each country, while the bar chart on the right is refined to the comparison of each event type, which is clear and easy to understand. Meanwhile, it expresses roughly the same meaning as the first dashboard, but with different presentation modes.</p></li>
 </ul>
+<h1 id="step--by-step-description-on-data-visualization-design-process"><strong>3 Step -by-step Description on Data Visualization Design Process</strong></h1>
+<h3 id="data-preparation"><strong>3.1.1 Data Preparation</strong></h3>
+<ol type="1">
+<li>Import Data into Tableau</li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="picture/2.png" width="70%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
+<ol start="2" type="1">
+<li>Hide the column that we might not use</li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="picture/3.png" width="70%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
+<ol start="3" type="1">
+<li>Create new column as ‘Number count’ for later pie chart preparetion</li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="picture/4.png" width="70%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
+<h3 id="data-visualization-for-distribution-map-chart"><strong>3.1.2 Data Visualization for Distribution Map Chart</strong></h3>
+<ol type="1">
+<li>Change background into Outdoors</li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="picture/5.png" width="70%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
+<p>2 Add ‘Notes’ and ‘Sub Event Type’ on Detail to show more information</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="picture/6.png" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
+<p>3 Avoid of using Green color and change the Green color into Brown on the ‘Strategic Development’ type</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="picture/change_color.png" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
+<h3 id="data-visualization-for-aggregate-map-chart"><strong>3.1.3 Data Visualization for Aggregate Map chart</strong></h3>
+<ol type="1">
+<li>Drag Count into Szie and country into Label, country into Detail.</li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="picture/7.png" width="40%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
+<ol start="2" type="1">
+<li>Create Pie chart for detail information add into Tooltip</li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="picture/10.png" width="40%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
+<ol start="3" type="1">
+<li>Edit Tooltip and insert the pie chart with the link</li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="picture/8.png" width="70%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="picture/11.png" width="50%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
+<ol start="4" type="1">
+<li>Change the calculation method into Median of Longitude and Latitude for more accurate location, because the location for each country is shifting after I aggregate them.</li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="picture/9.png" width="60%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
+<h3 id="data-visualization-for-bar-chart-total"><strong>3.1.4 Data Visualization for Bar chart total</strong></h3>
+<ol type="1">
+<li>Drag ‘Country’ into Columns and ‘Count’ into Row</li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="picture/12.png" width="60%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
+<ol start="2" type="1">
+<li>Create Fliter with Year 2015-2020 and create Country Fliter</li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="picture/13.png" width="30%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
+<ol start="3" type="1">
+<li>Create Animation Title with ‘Country’ insert</li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="picture/14.png" width="60%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
+<ol start="4" type="1">
+<li>Sort the bar chart with Descending Order</li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="picture/sort.png" width="60%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
+<h3 id="data-visualization-for-armed-conflict-event-by-type"><strong>3.1.4 Data Visualization for ‘Armed Conflict Event by Type’</strong></h3>
+<ol type="1">
+<li>Drag Country into Columns, drag ‘Event Type’ and ‘Count’ into Rows</li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="picture/15.png" width="60%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
+<ol start="2" type="1">
+<li>Create Fliter with Year 2015-2020, create Country fliter, ‘Event type’ on color and ‘Count’ on Label</li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="picture/16.png" width="30%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
+<ol start="3" type="1">
+<li>Final Result</li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="picture/17.png" width="60%" style="display: block; margin: auto auto auto 0;" /></p>
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

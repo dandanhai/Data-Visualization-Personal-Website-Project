@@ -73,3 +73,121 @@ knitr::include_graphics('picture/skatch.jpeg')
 
 - The following sketch from the bottom can also form a dashboard. The bar chart on the left shows the comparison of the total number of each country, while the bar chart on the right is refined to the comparison of each event type, which is clear and easy to understand. Meanwhile, it expresses roughly the same meaning as the first dashboard, but with different presentation modes.
 
+#  **3 Step -by-step Description on Data Visualization Design Process**
+
+### **3.1.1 Data Preparation**
+
+1. Import Data into Tableau 
+
+```{r, out.width='70%',fig.align='left'}
+knitr::include_graphics('picture/2.PNG')
+```
+
+2. Hide the column that we might not use
+
+```{r, out.width='70%',fig.align='left'}
+knitr::include_graphics('picture/3.PNG')
+```
+
+3. Create new column as 'Number count' for later pie chart preparetion 
+
+```{r, out.width='70%',fig.align='left'}
+knitr::include_graphics('picture/4.PNG')
+```
+
+### **3.1.2 Data Visualization for Distribution Map Chart**
+
+1. Change background into Outdoors
+
+```{r, out.width='70%',fig.align='left'}
+knitr::include_graphics('picture/5.PNG')
+```
+
+2 Add 'Notes' and 'Sub Event Type' on Detail to show more information
+
+```{r, out.width='100%',fig.align='left'}
+knitr::include_graphics('picture/6.PNG')
+```
+
+3 Avoid of using Green color and change the Green color into Brown on the 'Strategic Development' type
+
+```{r, out.width='100%',fig.align='left'}
+knitr::include_graphics('picture/change_color.PNG')
+```
+
+### **3.1.3 Data Visualization for Aggregate Map chart**
+
+1. Drag Count into Szie and country into Label, country into Detail. 
+
+```{r, out.width='40%',fig.align='left'}
+knitr::include_graphics('picture/7.PNG')
+```
+
+2. Create Pie chart for detail information add into Tooltip
+
+```{r, out.width='40%',fig.align='left'}
+knitr::include_graphics('picture/10.PNG')
+```
+
+3. Edit Tooltip and insert the pie chart with the link
+
+```{r, out.width='70%',fig.align='left'}
+knitr::include_graphics('picture/8.PNG')
+```
+
+```{r, out.width='50%',fig.align='left'}
+knitr::include_graphics('picture/11.PNG')
+```
+
+4. Change the calculation method into Median of Longitude and Latitude for more accurate location, because the location for each country is shifting after I aggregate them.
+
+```{r, out.width='60%',fig.align='left'}
+knitr::include_graphics('picture/9.PNG')
+```
+
+### **3.1.4 Data Visualization for Bar chart total**
+
+1. Drag 'Country' into Columns and 'Count' into Row 
+
+```{r, out.width='60%',fig.align='left'}
+knitr::include_graphics('picture/12.PNG')
+```
+
+2. Create Fliter with Year 2015-2020 and create Country Fliter
+
+```{r, out.width='30%',fig.align='left'}
+knitr::include_graphics('picture/13.PNG')
+```
+
+3. Create Animation Title with 'Country' insert
+
+```{r, out.width='60%',fig.align='left'}
+knitr::include_graphics('picture/14.PNG')
+```
+
+
+4. Sort the bar chart with Descending Order
+
+```{r, out.width='60%',fig.align='left'}
+knitr::include_graphics('picture/sort.PNG')
+```
+
+
+### **3.1.4 Data Visualization for 'Armed Conflict Event by Type'**
+
+1. Drag Country into Columns, drag 'Event Type' and 'Count' into Rows 
+
+```{r, out.width='60%',fig.align='left'}
+knitr::include_graphics('picture/15.PNG')
+```
+2. Create Fliter with Year 2015-2020, create Country fliter, 'Event type' on color and 'Count' on Label
+
+```{r, out.width='30%',fig.align='left'}
+knitr::include_graphics('picture/16.PNG')
+```
+
+3. Final Result
+
+```{r, out.width='60%',fig.align='left'}
+knitr::include_graphics('picture/17.PNG')
+```
