@@ -60,3 +60,16 @@ knitr::include_graphics('picture/change_color.PNG')
 #  **2 Sketch of Proposed Design** 
 
 ###  **2.1 Sketch**
+
+```{r, out.width='120%',fig.align='center'}
+knitr::include_graphics('picture/skatch.jpeg')
+```
+
+###  **2.2 Advantages of Propose Design**
+**Please view the visualization on
+<a href="https://public.tableau.com/profile/dan.hai#!/vizhome/Divergingstackedbarchart/Dashboard1?publish=yes">Tableau Public</a> **
+
+- My improvement is I want to use two maps in a dashboard, the first one is the initial figure prof give to us in the assignment, I put the background into OUTDOORS and added more information in the tooltips , the second map is on the sketch above, I hope the audience can quickly know the number of national conflict. At the same time, through pie chart, detailed information about event type percentage are on the tooltips.
+
+- The following sketch from the bottom can also form a dashboard. The bar chart on the left shows the comparison of the total number of each country, while the bar chart on the right is refined to the comparison of each event type, which is clear and easy to understand. Meanwhile, it expresses roughly the same meaning as the first dashboard, but with different presentation modes.
+
