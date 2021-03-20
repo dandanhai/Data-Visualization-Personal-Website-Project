@@ -191,3 +191,57 @@ knitr::include_graphics('picture/16.PNG')
 ```{r, out.width='60%',fig.align='left'}
 knitr::include_graphics('picture/17.PNG')
 ```
+
+#### **Dashboard for map** 
+
+1. Drag two maps into one dashboard 
+
+```{r, out.width='40%',fig.align='left'}
+knitr::include_graphics('picture/18.PNG')
+```
+
+2. Edit the Title Color:
+
+change the color into light grey for aesthetic 
+
+```{r, out.width='40%',fig.align='left'}
+knitr::include_graphics('picture/19.PNG')
+```
+
+3. Add source:
+
+Using Objects > Text > drag to bottom left and add :
+"Source: The Armed Conflict Location & Events Data Project (https://acleddata.com/#/dashboard)"
+
+#### **Dashboard for bar chart** 
+
+1. Drag two tables into one dashboard 
+
+```{r, out.width='40%',fig.align='left'}
+knitr::include_graphics('picture/20.PNG')
+```
+
+2. Edit the Title Color:
+
+change the color into light grey for aesthetic 
+
+```{r, out.width='40%',fig.align='left'}
+knitr::include_graphics('picture/21.PNG')
+```
+
+3. Add source:
+
+Using Objects > Text > drag to bottom left and add :
+"Source: The Armed Conflict Location & Events Data Project (https://acleddata.com/#/dashboard)"
+
+# **4. Final Visualization**
+
+4.1 Snapshot of Dashboard
+
+```{r, out.width='100%',fig.align='left'}
+knitr::include_graphics('picture/dashboard1.PNG')
+```
+
+```{r, out.width='100%',fig.align='left'}
+knitr::include_graphics('picture/dashboard2.PNG')
+```
