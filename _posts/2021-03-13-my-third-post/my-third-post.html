@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["my-third-post_files/anchor-4.2.2/anchor.min.js","my-third-post_files/bowser-1.9.3/bowser.min.js","my-third-post_files/distill-2.2.21/template.v2.js","my-third-post_files/jquery-1.11.3/jquery.min.js","my-third-post_files/popper-2.6.0/popper.min.js","my-third-post_files/tippy-6.2.7/tippy-bundle.umd.min.js","my-third-post_files/tippy-6.2.7/tippy-light-border.css","my-third-post_files/tippy-6.2.7/tippy.css","my-third-post_files/tippy-6.2.7/tippy.umd.min.js","my-third-post_files/webcomponents-2.0.0/webcomponents.js","picture/1.png","picture/10.png","picture/11.png","picture/12.png","picture/13.png","picture/14.png","picture/15.png","picture/16.png","picture/17.png","picture/18.png","picture/19.png","picture/2.png","picture/20.png","picture/21.png","picture/3.png","picture/4.png","picture/5.png","picture/6.png","picture/7.png","picture/8.png","picture/9.png","picture/change_color.png","picture/dashboard1.png","picture/dashboard2.png","picture/skatch.jpeg","picture/sort.png"]}
+  {"type":"character","attributes":{},"value":["my-third-post_files/anchor-4.2.2/anchor.min.js","my-third-post_files/bowser-1.9.3/bowser.min.js","my-third-post_files/distill-2.2.21/template.v2.js","my-third-post_files/jquery-1.11.3/jquery.min.js","my-third-post_files/popper-2.6.0/popper.min.js","my-third-post_files/tippy-6.2.7/tippy-bundle.umd.min.js","my-third-post_files/tippy-6.2.7/tippy-light-border.css","my-third-post_files/tippy-6.2.7/tippy.css","my-third-post_files/tippy-6.2.7/tippy.umd.min.js","my-third-post_files/webcomponents-2.0.0/webcomponents.js","picture/01.png","picture/02.png","picture/03.png","picture/04.png","picture/1.png","picture/10.png","picture/11.png","picture/12.png","picture/13.png","picture/14.png","picture/15.png","picture/16.png","picture/17.png","picture/18.png","picture/19.png","picture/2.png","picture/20.png","picture/21.png","picture/3.png","picture/4.png","picture/5.png","picture/6.png","picture/7.png","picture/8.png","picture/9.png","picture/change_color.png","picture/dashboard1.png","picture/dashboard2.png","picture/skatch.jpeg","picture/sort.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1483,35 +1483,35 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <h3 id="clarity-issue"><strong>1.1 Clarity Issue</strong></h3>
 <ul>
-<li><p>The color matching of the map ignores the problem of red-green colorblindness, which seems to be a small problem. However, there are an estimated 300 million colorblind people worldwide.</p></li>
-<li><p>There is a lot of useful information in our dataset, but when we open Tableau Public and look at the information for each location, there is very little information in Tooltips.</p></li>
+<li><p>The color matching of the map ignores the problem of red-green colorblindness, which seems to be a small problem. However, there are an estimated 300 million colorblind people worldwide. We should avoid using Green color.</p></li>
+<li><p>There is a lot of useful information in our dataset, but when we look at the information for each location, there is very little information in Tooltip.</p></li>
 <li><p>In the line chart on the right, the range of Y-axis is different, which may easily lead to misunderstanding.</p></li>
-<li><p>One great advantages of using line chart is to show tendency, while bar chart can better show distribution.</p></li>
-<li><p>In fact, in the map on the left, if you look at it alone, you can only find differences in the density distribution, and you can’t really get anything more insight.</p></li>
+<li><p>One great advantages of using line chart is to show tendency, while bar chart can better show distribution.It seems to me that the right on the right want to showcase distribution but using line chart.</p></li>
+<li><p>In fact, in the map on the left, if you look at it alone, you can only find distribution, and you can’t really get anything more insight. Should enrich the content with tooltip.</p></li>
 </ul>
 <h3 id="aesthetic-issue"><strong>1.2 Aesthetic Issue</strong></h3>
 <ul>
-<li><p>The color of the map is too dark, it is not aesthetically pleasing, we can try a different background.</p></li>
-<li><p>The figure on the right looks particularly messy and does not compare trends in each column. Can not get obvious information.</p></li>
+<li><p>The color of the map is too dark, it is not aesthetically pleasing, we can try a different background instead.</p></li>
+<li><p>The figure on the right looks particularly messy and does not compare trends in each column.</p></li>
 <li><p>The colors on the right are also very monotonous. Can try to enrich a simple line chart</p></li>
 </ul>
 <h3 id="improve-from-clarity"><strong>1.3 Improve from Clarity</strong></h3>
 <ul>
-<li>Change the green and replace it with dark brown for easily distinct purpose.</li>
+<li>Change the green color and replace it with dark brown for easily distinct purpose.</li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="picture/change_color.png" width="40%" style="display: block; margin: auto;" /></p>
 </div>
 <ul>
-<li>Add notes and subtypes to tooltips so that viewers can click on each location to see more information on each conflict.</li>
+<li>Add notes and subtypes to tooltip so that viewers can click on each location to see more information on each conflict.</li>
 <li>Change the Y-axis to the same value to avoid misleading.</li>
 <li>A bar chart can be used to show the distribution with the Y axis as the country and the X axis as the event type</li>
-<li>Add a map, aggregate all the cases, and then divide them by countries. By comparing the size of the circle, the conflict degree of each country can be obtained</li>
+<li>Add a map, aggregate all the armed conflict type, and then divide them by countries. By comparing the size of the circle, the conflict degree of each country can be obtained</li>
 </ul>
 <h3 id="improve-from-aesthetics"><strong>1.4 Improve from Aesthetics</strong></h3>
 <ul>
 <li><p>In Tableau, click Map Background Function and change it as ‘outdoors’.</p></li>
-<li><p>Can do it in Tableau by dragging Event Type into color square box, but it is best to use with bar chart instead of line chart.</p></li>
+<li><p>Can do it in Tableau by dragging Event Type into color square box, but it is best by using bar chart instead of line chart.</p></li>
 <li><p>Add a pie chart to the tooltip to show the proportion of event types for each country.</p></li>
 </ul>
 <h1 id="sketch-of-proposed-design"><strong>2 Sketch of Proposed Design</strong></h1>
@@ -1520,7 +1520,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><img src="picture/skatch.jpeg" width="120%" style="display: block; margin: auto;" /></p>
 </div>
 <h3 id="advantages-of-propose-design"><strong>2.2 Advantages of Propose Design</strong></h3>
-<p><strong>Please view the visualization on <a href="https://public.tableau.com/profile/dan.hai#!/vizhome/Divergingstackedbarchart/Dashboard1?publish=yes">Tableau Public</a> </strong></p>
+<p><strong>Please view the visualization on <a href="https://public.tableau.com/profile/dan.hai#!/vizhome/Assignment3Map/MapDashboard">Tableau Public 1</a> <a href="https://public.tableau.com/profile/dan.hai#!/vizhome/Assignment3_16161235527610/BarChartDashboard">Tableau Public 2</a> </strong></p>
 <ul>
 <li><p>My improvement is I want to use two maps in a dashboard, the first one is the initial figure prof give to us in the assignment, I put the background into OUTDOORS and added more information in the tooltips , the second map is on the sketch above, I hope the audience can quickly know the number of national conflict. At the same time, through pie chart, detailed information about event type percentage are on the tooltips.</p></li>
 <li><p>The following sketch from the bottom can also form a dashboard. The bar chart on the left shows the comparison of the total number of each country, while the bar chart on the right is refined to the comparison of each event type, which is clear and easy to understand. Meanwhile, it expresses roughly the same meaning as the first dashboard, but with different presentation modes.</p></li>
@@ -1676,6 +1676,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="picture/dashboard2.png" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
 </div>
+<p>4.2 Main observations</p>
+<ol type="1">
+<li><p>The Philippines has the largest number of armed conflicts, accounting for 11,092, of which Vilence Against Civilian accounts for 59.69%, followed by Battle, which accounts for 20.48%. In second place is Myanmar, of which Battles has the largest of proportion with 41.97%.</p></li>
+<li><p>Indonesia had the highest number of protests with 3,482. Burma was second with 1,571</p></li>
+<li><p>As can be seen from the bar chart and the map, LAOS is relatively stable in these eight countries, with 35 cases of armed conflict in total between 2015 and 2020</p></li>
+<li><p>The most density armed conflict part in Malaysia is in Kota Bharu. The most density armed conflict part in Myanmar is Akyab. The most density armed conflict part in Thailand is Bangkok.</p></li>
+</ol>
+<p><img src="picture/01.png" style="width:40.0%" /> <img src="picture/02.png" style="width:40.0%" /></p>
+<p><img src="picture/03.png" style="width:40.0%" /> <img src="picture/04.png" style="width:40.0%" /></p>
+<ol start="5" type="1">
+<li>Reference</li>
+</ol>
+<p><a href="https://acleddata.com/#/dashboard" class="uri">https://acleddata.com/#/dashboard</a></p>
+<p><a href="https://public.tableau.com/profile/tskam#!/vizhome/South-eastAsiaArmedConflictAnalysis/South-eastAsiaArmedConflictAnalysis" class="uri">https://public.tableau.com/profile/tskam#!/vizhome/South-eastAsiaArmedConflictAnalysis/South-eastAsiaArmedConflictAnalysis</a></p>
+<p><a href="https://community.rstudio.com/t/how-to-stack-two-images-horizontally-in-r-markdown/18941" class="uri">https://community.rstudio.com/t/how-to-stack-two-images-horizontally-in-r-markdown/18941</a></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

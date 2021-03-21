@@ -23,38 +23,38 @@ knitr::include_graphics('picture/1.PNG')
 
 
 ### **1.1 Clarity Issue**
-- The color matching of the map ignores the problem of red-green colorblindness, which seems to be a small problem. However, there are an estimated 300 million colorblind people worldwide. 
-- There is a lot of useful information in our dataset, but when we open Tableau Public and look at the information for each location, there is very little information in Tooltips.
+- The color matching of the map ignores the problem of red-green colorblindness, which seems to be a small problem. However, there are an estimated 300 million colorblind people worldwide. We should avoid using Green color. 
+- There is a lot of useful information in our dataset, but when we look at the information for each location, there is very little information in Tooltip.
 - In the line chart on the right, the range of Y-axis is different, which may easily lead to misunderstanding.
 
-- One great advantages of using line chart is to show tendency, while bar chart can better show distribution.
+- One great advantages of using line chart is to show tendency, while bar chart can better show distribution.It seems to me that the right on the right want to showcase distribution but using line chart.
 
-- In fact, in the map on the left, if you look at it alone, you can only find differences in the density distribution, and you can't really get anything more insight.
+- In fact, in the map on the left, if you look at it alone, you can only find distribution, and you can't really get anything more insight. Should enrich the content with tooltip.
 
 ### **1.2 Aesthetic Issue**
-- The color of the map is too dark, it is not aesthetically pleasing, we can try a different background.
+- The color of the map is too dark, it is not aesthetically pleasing, we can try a different background instead.
 
-- The figure on the right looks particularly messy and does not compare trends in each column. Can not get obvious information.
+- The figure on the right looks particularly messy and does not compare trends in each column. 
 
 - The colors on the right are also very monotonous. Can try to enrich a simple line chart
 
 ### **1.3 Improve from Clarity**
 
-- Change the green and replace it with dark brown for easily distinct purpose.
+- Change the green color and replace it with dark brown for easily distinct purpose.
 
 ```{r, out.width='40%',fig.align='center'}
 knitr::include_graphics('picture/change_color.PNG')
 ```
 
-- Add notes and subtypes to tooltips so that viewers can click on each location to see more information on each conflict.
+- Add notes and subtypes to tooltip so that viewers can click on each location to see more information on each conflict.
 - Change the Y-axis to the same value to avoid misleading.
 - A bar chart can be used to show the distribution with the Y axis as the country and the X axis as the event type
-- Add a map, aggregate all the cases, and then divide them by countries. By comparing the size of the circle, the conflict degree of each country can be obtained
+- Add a map, aggregate all the armed conflict type, and then divide them by countries. By comparing the size of the circle, the conflict degree of each country can be obtained
 
 ### **1.4 Improve from Aesthetics**
 - In Tableau, click Map Background Function and change it as 'outdoors'.
 
-- Can do it in Tableau by dragging Event Type into color square box, but it is best to use with bar chart instead of line chart.
+- Can do it in Tableau by dragging Event Type into color square box, but it is best by using bar chart instead of line chart.
 - Add a pie chart to the tooltip to show the proportion of event types for each country.
 
 #  **2 Sketch of Proposed Design** 
@@ -67,7 +67,8 @@ knitr::include_graphics('picture/skatch.jpeg')
 
 ###  **2.2 Advantages of Propose Design**
 **Please view the visualization on
-<a href="https://public.tableau.com/profile/dan.hai#!/vizhome/Divergingstackedbarchart/Dashboard1?publish=yes">Tableau Public</a> **
+<a href="https://public.tableau.com/profile/dan.hai#!/vizhome/Assignment3Map/MapDashboard">Tableau Public 1</a> 
+<a href="https://public.tableau.com/profile/dan.hai#!/vizhome/Assignment3_16161235527610/BarChartDashboard">Tableau Public 2</a> **
 
 - My improvement is I want to use two maps in a dashboard, the first one is the initial figure prof give to us in the assignment, I put the background into OUTDOORS and added more information in the tooltips , the second map is on the sketch above, I hope the audience can quickly know the number of national conflict. At the same time, through pie chart, detailed information about event type percentage are on the tooltips.
 
@@ -245,3 +246,27 @@ knitr::include_graphics('picture/dashboard1.PNG')
 ```{r, out.width='100%',fig.align='left'}
 knitr::include_graphics('picture/dashboard2.PNG')
 ```
+
+4.2 Main observations
+
+1. The Philippines has the largest number of armed conflicts, accounting for 11,092, of which Vilence Against Civilian accounts for 59.69%, followed by Battle, which accounts for 20.48%. In second place is Myanmar, of which Battles has the largest of proportion with 41.97%.
+
+2. Indonesia had the highest number of protests with 3,482. Burma was second with 1,571
+
+3. As can be seen from the bar chart and the map, LAOS is relatively stable in these eight countries, with 35 cases of armed conflict in total between 2015 and 2020
+
+4. The most density armed conflict part in Malaysia is in Kota Bharu. The most density armed conflict part in Myanmar is Akyab. The most density armed conflict part in Thailand is Bangkok.
+
+
+![](picture/01.PNG){width=40%} ![](picture/02.PNG){width=40%}
+
+![](picture/03.PNG){width=40%} ![](picture/04.PNG){width=40%}
+
+
+5. Reference 
+
+https://acleddata.com/#/dashboard
+
+https://public.tableau.com/profile/tskam#!/vizhome/South-eastAsiaArmedConflictAnalysis/South-eastAsiaArmedConflictAnalysis
+
+https://community.rstudio.com/t/how-to-stack-two-images-horizontally-in-r-markdown/18941
