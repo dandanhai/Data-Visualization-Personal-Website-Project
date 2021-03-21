@@ -1,11 +1,11 @@
 ---
-title: "My-third-post"
+title: "DataViz Makeover 03"
 description: |
-  A short description of the post.
+  South-east Asia Armed Conflict Analysis is a data visualisation created to reveal the spatio-temporal patterns of armed conflict in selected South-east Asia countries between 2015-2020.
 author:
   - name: Dan Hai
     url: http://linkedin.com/in/dan-hai-1283091b4
-date: 03-13-2021
+date: 03-21-2021
 output:
   distill::distill_article:
     self_contained: false
