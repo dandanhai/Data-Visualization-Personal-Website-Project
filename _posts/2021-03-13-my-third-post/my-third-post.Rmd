@@ -8,6 +8,8 @@ author:
 date: 03-21-2021
 output:
   distill::distill_article:
+    toc: true
+    toc_depth: 4
     self_contained: false
 ---
 ```{r setup, include=FALSE}
